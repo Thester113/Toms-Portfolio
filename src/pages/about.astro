@@ -1,7 +1,7 @@
+---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContactCTA from "../components/ContactCTA.astro";
 import Hero from "../components/Hero.astro";
-
 ---
 
 <BaseLayout
@@ -17,30 +17,15 @@ import Hero from "../components/Hero.astro";
         <img
           width="1553"
           height="873"
-          src="/assets/at-work.jpg"
-          alt="Tom Hester at work with a colleague"
+          src="/assets/Wedding.jpg"
+          alt="Tom Hester at his wedding"
           class="hero-img"
         />
       </Hero>
 
-      <section class="section">
-        <h2 class="section-title">Background</h2>
-        <div class="content">
-          <!-- Content here -->
-        </div>
-      </section>
-      <section class="section">
-        <h2 class="section-title">Education</h2>
-        <div class="content">
-          <!-- Content here -->
-        </div>
-      </section>
-      <section class="section">
-        <h2 class="section-title">Skills</h2>
-        <div class="content">
-          <!-- Content here -->
-        </div>
-      </section>
+      <!-- Other sections -->
+      <!-- ... -->
+
     </main>
 
     <ContactCTA />
@@ -92,15 +77,6 @@ import Hero from "../components/Hero.astro";
     .about {
       display: grid;
       grid-template-columns: 1fr 60% 1fr;
-    }
-
-    .about > :global(:first-child) {
-      grid-column-start: 2;
-    }
-
-    .section {
-      display: contents;
-      font-size: var(--text-lg);
     }
   }
 </style>
